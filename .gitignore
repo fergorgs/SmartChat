@@ -1,0 +1,10 @@
+*.gch
+*.o
+
+bin
+
+files
+
+old/
+
+medias
