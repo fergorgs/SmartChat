@@ -68,7 +68,7 @@ void Client::create_connection(std::string& ip_addr) {
     connected = true;
 
     Screen::log_message("You are connected.", Screen::LogType::SUCCESS);
-    Screen::log_message("Use /join [channel] to join a channel.", Screen::LogType::WARNING);
+    Screen::log_message("Use /join #[channel_name] to join a channel.", Screen::LogType::WARNING);
 
     if (LOG) std::cout << "CLIENT_LOG: Connected to hub" << std::endl;
 }
