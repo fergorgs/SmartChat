@@ -1,10 +1,10 @@
 *.gch
 *.o
 
-bin
-
 files
+
+bin/*
 
 old/
 
-medias
+medias/*
