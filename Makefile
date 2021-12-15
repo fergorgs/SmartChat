@@ -21,9 +21,6 @@ server/%.o: server/%.cpp
 	g++ -c -o $@ $(PCH_SERVER) $< -pthread $(CPP_VERSION) 
 
 all: client/PCHClient.h.gch server/PCHServer.h.gch $(client_obj) $(server_obj) 
-	mkdir bin
-	mkdir medias
-	mkdir files
 	g++ -o bin/app $(client_obj) `pkg-config gtkmm-3.0 --libs` $(CPP_VERSION)
 	g++ -o bin/hub $(server_obj) -pthread $(CPP_VERSION)
 
