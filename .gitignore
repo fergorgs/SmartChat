@@ -3,8 +3,8 @@
 
 files
 
-bin/*
+bin
+
+medias
 
 old/
-
-medias/*
